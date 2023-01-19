@@ -14,8 +14,7 @@ def generatePackageSpecifiers():
         for spec in all_specs:
             if pkg == '$meta':
                 continue
-            else:
-                yield pkg, spec
+            yield pkg, spec
 
 
 class TestData(unittest.TestCase):
